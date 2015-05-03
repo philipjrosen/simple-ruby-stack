@@ -15,6 +15,11 @@ describe Stack do
     @stack.push('b')
     expect(@stack.size).to eq 2
   end
-  
-end
 
+  it "reports a size of 1 after adding two items and removing one" do
+    @stack.push('a')
+    @stack.push('b')
+    @stack.pop()
+    expect(@stack.size).to eq 1
+  end
+end

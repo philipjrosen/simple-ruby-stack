@@ -12,5 +12,8 @@ class Stack
     # return self for method chaining
     self
   end
-end
 
+  def pop
+    @store.pop
+  end
+end
