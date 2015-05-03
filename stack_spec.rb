@@ -40,4 +40,9 @@ describe Stack do
     @stack.pop
     expect(@stack.pop).to eq 'b'
   end
+
+  it "allows chaining methods" do
+    result = @stack.push('a').push('b').pop
+    expect(result).to eql 'b'
+  end
 end
