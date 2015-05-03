@@ -6,5 +6,11 @@ class Stack
   def size
     @store.size
   end
+
+  def push(item)
+    @store.push(item)
+    # return self for method chaining
+    self
+  end
 end
 
