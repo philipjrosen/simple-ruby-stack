@@ -22,4 +22,8 @@ describe Stack do
     @stack.pop()
     expect(@stack.size).to eq 1
   end
+
+  it "returns nil when popping from an empty stack" do
+    expect(@stack.pop).to eql nil
+  end
 end
